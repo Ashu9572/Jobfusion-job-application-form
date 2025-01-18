@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+          <img src="TT.jpeg" alt="Trishastik Technology Logo" class="logo" />
+          <div class="header-text">
+            <h1>Trishastik Technology</h1>
+            <p><b>Your Gateway to Excellence in Web Development & Salesforce Remote Data Management</b></p>
+          </div>
+        </div>
+    </header>
+      
+    <div class="form-container">
+        <h1>Job Application Form</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- Skills and Certifications -->
+            <h2>Skills and Certifications</h2>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" rows="4" required></textarea>
+
+            <label for="languages">Languages Known:</label>
+            <input type="text" id="languages" name="languages" required>
+
+            <label for="certifications">Certifications:</label>
+            <input type="text" id="certifications" name="certifications">
+
+            <!-- Additional Information -->l
+            <h2>Additional Information</h2>
+            <label for="whyHire">Why Should We Hire You?</label>
+            <textarea id="whyHire" name="whyHire" required></textarea>
+
+            <label for="hearAboutUs">How Did You Hear About Us?</label>
+            <input type="text" id="hearAboutUs" name="hearAboutUs" required>
+
+            <div class="form-group">
+            <label for="disability">Do You Have Any Disabilities?</label>
+            <div class="radio-group">
+                <label class="radio-option">
+                    <input type="radio" name="disability" value="yes" /> Yes
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="disability" value="no" /> No
+                </label>
+            </div>
+        </div>  
+
+            <label for="linkedin">LinkedIn Profile/Portfolio Link:</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://your-profile-link.com" required>
+
+            <!-- Attachments -->
+            <h2>Attachments</h2>
+            <label for="resume">Upload Resume (PDF/DOC):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <label for="coverLetter">Upload Cover Letter (Optional):</label>
+            <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx">
+
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I Agree to the Terms and Conditions</label>
+            </div>
+            
+        
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
