@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, 120deg, hsl(260, 73%, 70%), #4299E1, rgba(67,56,202,0.7));
+    color: #4299E1
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, white, white);
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: rotate(360deg) scale(1.1); /* Full rotation and slight enlargement */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+.header-text h1 {
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 1.2em;
+    margin: 5px 0 0;
+    margin-left: 100px;
+    margin-top: 15px;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-left: -7px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+/* Input, Textarea, and Select Styling */
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    margin-left: -10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: border 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 2px solid #4CAF50;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.radio-option input[type="radio"] {
+    margin: 0;
+    transform: scale(1.2); /* To enhance visibility */
+}
+
+.terms-container {
+    display: block; /* Use flex layout */
+    align-items: center; /* Align checkbox and label vertically */
+    gap: 8px; /* Space between checkbox and label */
+    margin-top: 10px; /* Add spacing above */
+    justify-content: flex-start; /* Align to the left */
+}
+
+.terms-container input[type="checkbox"] {
+    transform: scale(1.9); /* Slightly larger checkbox */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.terms-container label {
+    font-size: 16px; /* Label font size */
+    color: #2a2a2a; /* Label text color */
+    line-height: 1.5; /* Proper alignment with checkbox */
+    margin: 0; /* Remove default margin */
+}
+
+
+
+
+
+/* URL Input Styling */
+input[type="url"] {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+input[type="url"]:focus {
+    border: 2px solid #4CAF50;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(120deg, #4CAF50, #2c3e50);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(120deg, #2c3e50, #4CAF50);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
